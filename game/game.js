@@ -23,6 +23,8 @@ Game = {
     game.level  =  0;// current level
     game.line    =  0;// current line of level
     game.score = 0;
+    game.undo_num = 0;
+    game.move_any_where_num = 0;
     game.next_arr = [0,1,2];// next colors
     game.tmp_index = -1; //tmp box index
     game.live_boxs = [];//live boxs
@@ -362,6 +364,13 @@ Game = {
     game.game_over = function(){
     
     };
+    //undo
+    game.undo = function(){
+    
+    }
+    //move any where
+    game.move_any_where = function(){
+    }
     return game;
     }
 };
